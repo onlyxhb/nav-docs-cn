@@ -1,29 +1,27 @@
 {
-  "private": true,
-  "name": "dumi-app",
+  "name": "nav-docs-cn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "dumi dev",
-    "build": "dumi build",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "serve": "vitepress serve ."
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlyxhb/nav-docs-cn.git"
   },
-  "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onlyxhb/nav-docs-cn/issues"
   },
+  "homepage": "https://github.com/onlyxhb/nav-docs-cn#readme",
   "devDependencies": {
-    "dumi": "^1.0.13",
-    "lint-staged": "^10.0.7",
-    "yorkie": "^2.0.0",
+    "vitepress": "^1.0.0-alpha.15",
+    "vue": "^3.2.39",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-babel": "^5.3.1",
