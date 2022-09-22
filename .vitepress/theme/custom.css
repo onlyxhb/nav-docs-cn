@@ -82,3 +82,8 @@
     margin: 0;
   }
 }
+
+/* 移除广告 */
+.VPDocAsideCarbonAds {
+  display: none;
+}
